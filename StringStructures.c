@@ -7,9 +7,12 @@ int main()
 
     int id;
     char name[200] = "Andrew Rodriguez";
-    char name2[100];
+    char name2[100] = "Carolina Duarte";
 
-    strcpy(name2, name);
+strcat(name2, name);
+    // strcpy(name2, name);
+
+
 
     printf("%s", name2);
 
