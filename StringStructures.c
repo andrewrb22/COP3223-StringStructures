@@ -1,19 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int main(){
+int main()
+{
 
-int id;
-char name[200] = "Carlos Sanchez";
+    int id;
+    char name[200] = "Andrew Rodriguez";
+    char name2[100];
 
-printf("Enter you Id: ");
-scanf("%d", &id);
-fflush(stdin);
-printf("Enter your Name: ");
-gets(name);
+    strcpy(name2, name);
 
-printf("\nYour name: %s\n Your ID: %d\n", name, id);
+    printf("%s", name2);
 
-return 0;
-
+    return 0;
 }
