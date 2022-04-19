@@ -2,19 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct
+{
+    int id;
+    float gpa;
+    char *name;
+
+} students;
+
 int main()
 {
 
-    int id;
-    char name[200] = "Andrew Rodriguez";
-    char name2[100] = "Carolina Duarte";
+    students s;
+    s.id = 123;
+    s.gpa = 3.9;
+    s.name = malloc(100 * sizeof(char));
 
-strcat(name2, name);
-    // strcpy(name2, name);
+    strcpy(s.name, "Andrew Rodriguez");
 
-
-
-    printf("%s", name2);
+    printf("ID = %d\n GPA = %.2F\n Name = %s ", s.id, s.gpa, s.name);
 
     return 0;
 }
